@@ -1,5 +1,5 @@
 """
-Problem: (Unspecified, custom competitive programming task)
+Problem: (https://codeforces.com/contest/2143/problem/A)
 
 Statement (inferred from code):
 - Given t test cases.
