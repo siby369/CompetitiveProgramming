@@ -15,3 +15,10 @@ Approach:
 Time Complexity: O(n log n), due to sorting.
 Space Complexity: O(1), aside from sorting in place.
 """
+
+class Solution:
+    def largestPerimeter(self, nums: List[int]) -> int:
+        nums.sort(reverse = True)
+        while len(nums) > 2 and nums[0] >= nums[1] + nums[2]:
+            nums.pop(0)
+        return 0 if len(nums) < 3 else sum(nums[:3])
